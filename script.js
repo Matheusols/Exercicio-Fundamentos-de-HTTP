@@ -30,9 +30,7 @@ document.getElementById("add").addEventListener("click", () => {
 });
 
 function removerCadastro(id) {
-    fetch(`https://crudcrud.com/api/f120e55359ad456da20b1bbe5aa14758/cadastro/${id}`, {
-        method: "DELETE"
-    })
+    fetch(`https://crudcrud.com/api/f120e55359ad456da20b1bbe5aa14758/cadastro/${id}`, {method: "DELETE"})
     .then(() => {
         alert("Usuário removido com sucesso!");
         location.reload();
